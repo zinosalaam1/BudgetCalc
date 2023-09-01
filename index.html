@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Salaam Muiz Bolatito" />
+    <meta name="description" content="Project" />
+    <meta
+      name="keywords"
+      content="github, google, html, project"
+    />
+    <title>Automated Budget Calculator</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <h1 id="title" class="text-center">Budget Calc</h1>
+        <p id="description" class="description text-center">
+          Please kindly input your details.
+        </p>
+      </header>
+      <form id="survey-form" name="myForm" onsubmit="return validateForm()" >
+        <div class="form-group">
+          <label id="name-label" for="name">Name:</label>
+          <input
+            id="name"
+            type="text"
+            name="name"
+            placeholder="Enter your name"
+            class="form-control"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <label id="income-label" for="income">Income: </label>
+          <input
+            id="income"
+            type="number"
+          
+            name="income"
+            placeholder="Enter your gross monthly income > ₦30000"
+            class="form-control"
+            
+            required
+          />
+        </div>
+        <div class="form-group">
+          <label id="number-label" for="age"
+            >Age:
+            <span class="clue"> (optional) </span>
+          </label>
+          <input
+            id="number"
+            type="number"
+            placeholder="10"
+            min="10"
+            max="100"
+            class="form-control"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <p>Marital Status</p>
+          <select id="dropdown" name="role" class="form-control" required>
+            <option disabled selected value="non">
+              Choose your marital status
+            </option>
+            <option value="Single">Single</option>
+            <option value="Married">Married</option>
+            <option value="Divorced">Divorced</option>
+            <option value="void">Prefer not to specify</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <p>Do you have dependencies</p>
+          <label for="yes">
+            <input
+              type="radio"
+              id="yes"
+              name="coding-python"
+              value="yes"
+              class="input-radio"
+              checked
+            />
+            Yes
+          </label>
+          <label for="no">
+            <input
+              id="no"
+              type="radio"
+              name="coding-python"
+              value="no"
+              class="input-radio"
+            />
+            No
+          </label>
+          
+        </div>
+       
+        <div class="form-group">
+          <input type="button" value="Submit" class="submit-button" id="btn1"/>
+        </div>
+      </form>
+      <div>
+        <p id="penis" style="margin-top: 30px; color: black;"></p>
+        <p class="text-center" style="margin-top: 30px; color: black;">Feeding (15%):
+          <p id = 'feeding' style = 'color:black' class = 'text-center'></p>
+        </p>
+  
+        <p class="text-center" style="margin-top: 30px; color: black;">Housing (25%):
+          <p id = 'housing' style = 'color:black' class = 'text-center'></p>
+        </p>
+  
+        <p class="text-center" style="margin-top: 30px; color: black;">Transportation (10%):
+          <p id = 'transport' style = 'color:black' class = 'text-center'></p>
+        </p>
+  
+        <p class="text-center" style="margin-top: 30px; color: black;">Utilities (5%):
+          <p id = 'utilities' style = 'color:black' class = 'text-center'></p>
+        </p>
+  
+        <p class="text-center" style="margin-top: 30px; color: black;">Insurance (10%):
+          <p id = 'insurance' style = 'color:black' class = 'text-center'></p>
+        </p>
+  
+        <p class="text-center" style="margin-top: 30px; color: black;">Medical & Healthcare (5%):
+          <p id = 'medical' style = 'color:black' class = 'text-center'></p>
+        </p>
+  
+        <p class="text-center" style="margin-top: 30px; color: black;">Savings, Investment & Debt Payment (10%):
+          <p id = 'sidp' style = 'color:black' class = 'text-center'></p>
+        </p>
+  
+        <p class="text-center" style="margin-top: 30px; color: black;">Personal Spendings (5%):
+          <p id = 'personal' style = 'color:black' class = 'text-center'></p>
+        </p>
+  
+      
+  
+        <p class="text-center" style="margin-top: 30px; color: black;">Recreation & Entertainment (5%):
+          <p id = 'enjoy' style = 'color:black' class = 'text-center'></p>
+        </p>
+  
+        <p class="text-center" style="margin-top: 30px; color: black;">Miscellaneous (10%):
+          <p id = 'misc' style = 'color:black' class = 'text-center'></p>
+        </p>
+  
+  
+      </div>
+    </div>
+    
+    <script src="main.js"></script>
+    
+  </body>
+</html>
